@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>proyect</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <a href="#" class="navbar-brand">prueba1</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">home</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">holis</a>
+                </li>
+            </ul>
+            
+            <form class="form-inline">
+                <button type="button" class="btn btn-outline-secondary mr-2 mt-2" data-toggle="modal" data-target="#mymodal">Login</button>
+                <button type="button" class="btn btn-outline-secondary mt-2" data-toggle="modal" data-target="#mymodal2">registrarse</button>
+            </form>
+            
+           
+                     
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                            <h3 class="modal-title">Login Form</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>                           
+                    </div>
+
+                    <div class="item ml-4">
+                            <ul class="tabs">
+                                <li class="login_tab">
+                                        <button type="button" class="btn btn-outline-secondary mr-2 mt-2" data-toggle="modal" data-target="#mymodal">iniciar sesion</button>
+                                </li>
+                                <li class="login_tab">
+                                        
+                                        <button type="button" class="btn btn-outline-secondary mt-2" data-toggle="modal" data-target="#mymodal2">registrarse</button>
+                                </li>
+                            </ul>
+                    </div>                
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+
+                            </div>
+                            <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                            </div>
+                            <div class="form-group form-check">
+                                    <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                    </label>
+                            </div>
+                            
+
+                        </form>                                               
+                    </div>
+                    <div class="modal-footer">
+                            <button class="btn btn-primary">iniciar sesion</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="mymodal2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+    
+                        <div class="modal-header">
+                                <h3 class="modal-title">Registro</h3>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>  
+                                
+                        </div>
+
+                        <div class="item ml-4">
+                                <ul class="tabs">
+                                    <li class="login_tab">                              <!--por aqui quite la clase close, revisar-->
+                                         <button type="button" class="btn btn-outline-secondary mr-2 mt-2" data-toggle="modal" data-target="#mymodal" data-dismiss="modal" id="cierre">&times; iniciar sesion</button>
+                                    </li>
+                                    <li class="login_tab">
+                                            <button type="button" class="btn btn-outline-secondary mt-2 close" data-toggle="modal" data-target="#mymodal2" data-dismiss="modal">&times; registrarse</button>
+                                    </li>
+                                </ul>
+                        </div>                     
+    
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label>Nombre de usuario</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    
+                                </div>
+
+                                <div class="form-group">
+                                        <label>
+                                            Fecha de nacimiento                                              
+                                        </label>
+                                        <input type="date" class="form-control">
+                                </div>
+                                                                                              
+    
+                            </form>                                               
+                        </div>
+                        <div class="modal-footer">
+                                <button class="btn btn-primary">Registrarse</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    </div>
+</body>
+</html>
